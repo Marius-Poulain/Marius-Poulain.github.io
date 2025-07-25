@@ -59,5 +59,26 @@
       });
     }
   </script>
+    <footer class="footer">
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/marius-poulain-360b86131/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/marius.poulain" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/Marius-Poulain" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.researchgate.net/profile/Marius-Poulain" target="_blank"><i class="fab fa-researchgate"></i></a>
+      <a href="https://scholar.google.com/citations?user=xxxxxxxx" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+      <a href="https://orcid.org/0009-0006-2037-700X" target="_blank"><i class="fab fa-orcid"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    function switchLanguage() {
+      const lang = document.documentElement.lang === 'fr' ? 'en' : 'fr';
+      document.documentElement.lang = lang;
+      document.querySelector('.lang-switch').textContent = lang === 'fr' ? 'EN' : 'FR';
+      document.querySelectorAll('[data-fr]').forEach(el => {
+        el.textContent = el.getAttribute(`data-${lang}`);
+      });
+    }
+  </script>
 </body>
 </html>
