@@ -35,15 +35,7 @@
     </section>
         
   </main>
-  <script>
-    function switchLanguage() {
-      const lang = document.documentElement.lang === 'fr' ? 'en' : 'fr';
-      document.documentElement.lang = lang;
-      document.querySelector('.lang-switch').textContent = lang === 'fr' ? 'EN' : 'FR';
-      document.querySelectorAll('[data-fr]').forEach(el => {
-        el.textContent = el.getAttribute(`data-${lang}`);
-      });
-    }
+
   </script>
     <footer class="footer">
     <div class="social-links">
