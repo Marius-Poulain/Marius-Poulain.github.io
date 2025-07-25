@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marius Poulain</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-support">
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="lang-switch" onclick="switchLanguage()">EN</button>
+  </header>
+  <main>
+
+    <section>
+      <h2>Support</h2>
+      <p>Je propose mes services en :</p>
+      <ul>
+        <li>📊 Analyse de données</li>
+        <li>📝 Rédaction scientifique</li>
+        <li>📁 Gestion de projet</li>
+      </ul>
+      <p>Contactez-moi pour discuter de vos besoins !</p>
+    </section>
+        
+  </main>
+  <script>
+    function switchLanguage() {
+      const lang = document.documentElement.lang === 'fr' ? 'en' : 'fr';
+      document.documentElement.lang = lang;
+      document.querySelector('.lang-switch').textContent = lang === 'fr' ? 'EN' : 'FR';
+      document.querySelectorAll('[data-fr]').forEach(el => {
+        el.textContent = el.getAttribute(`data-${lang}`);
+      });
+    }
+  </script>
+</body>
+</html>

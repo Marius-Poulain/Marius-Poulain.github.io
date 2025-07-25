@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -6,99 +7,28 @@
   <title>Marius Poulain</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Inter', sans-serif; background-color: #0b0b0b; color: #f0f0f0; line-height: 1.6; }
-    header {
-      position: fixed; top: 0; width: 100%; background-color: #111; padding: 1rem 2rem;
-      display: flex; justify-content: space-between; align-items: center;
-      border-bottom: 1px solid #333; z-index: 10;
-    }
-    nav a {
-      color: #f0f0f0; margin: 0 1.5rem; text-decoration: none; font-weight: 600;
-    }
-    nav a:hover { color: #00ffe1; }
-    .lang-switch {
-      background: none; border: none; color: #f0f0f0; font-weight: 600; cursor: pointer;
-    }
-    section {
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 4rem 2rem;
-      background-size: cover;
-      background-position: center;
-    }
-    #about { background-image: url('https://source.unsplash.com/1600x900/?technology,science'); }
-    #projects { background-image: url('https://source.unsplash.com/1600x900/?data,research'); }
-    #support { background-image: url('https://source.unsplash.com/1600x900/?documentation,abstract'); }
-    #contact { background-image: url('https://source.unsplash.com/1600x900/?communication,network'); }
-    h1, h2, h3 { margin-bottom: 1rem; }
-    ul { list-style: none; padding-left: 0; }
-    ul li::before { content: "• "; color: #00ffe1; }
-    .container { max-width: 1000px; margin: 6rem auto 2rem auto; padding: 2rem; display: flex; flex-direction: column; gap: 3rem; }
-    .profile {
-      display: flex; flex-direction: column; align-items: center; text-align: center;
-    }
-    .profile img {
-      border-radius: 50%; width: 150px; height: 150px; object-fit: cover;
-      margin-bottom: 1rem; border: 2px solid #444;
-    }
-    .social-links a {
-      color: #f0f0f0; margin: 0 0.5rem; font-size: 1.2rem;
-    }
-    .projects-submenu {
-      display: none;
-      position: absolute;
-      background-color: #111;
-      padding: 1rem;
-      border: 1px solid #333;
-      top: 3.5rem;
-    }
-    nav li {
-      position: relative;
-      display: inline-block;
-    }
-    nav li:hover .projects-submenu {
-      display: block;
-    }
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-    }
-    nav ul li a {
-      display: block;
-      padding: 0.5rem 1.5rem;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-about">
   <header>
     <nav>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li>
-          <a href="#projects">Projects</a>
-          <ul class="projects-submenu">
-            <li><a href="#projects">Bed Bugs</a></li>
-            <li><a href="#projects">Locust</a></li>
-            <li><a href="#projects">Enter Sci</a></li>
-          </ul>
-        </li>
-        <li><a href="#support">Support</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="index.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
     <button class="lang-switch" onclick="switchLanguage()">EN</button>
   </header>
+  <main>
 
-  <div class="container">
     <div class="profile">
       <img src="profil.jpg" alt="Marius Poulain">
       <h1>Marius Poulain</h1>
-      <p data-fr="Chercheur postdoctoral en écologie microbienne" data-en="Postdoctoral Researcher in Microbial Ecology">Chercheur postdoctoral en écologie microbienne</p>
+      <p data-fr="Chercheur postdoctoral en écologie microbienne" data-en="Postdoctoral Researcher in Microbial Ecology">
+        Chercheur postdoctoral en écologie microbienne
+      </p>
       <div class="social-links">
         <a href="https://www.linkedin.com/in/marius-poulain-360b86131/" target="_blank"><i class="fab fa-linkedin"></i></a>
         <a href="https://www.instagram.com/marius.poulain" target="_blank"><i class="fab fa-instagram"></i></a>
@@ -108,65 +38,17 @@
         <a href="https://orcid.org/0009-0006-2037-700X" target="_blank"><i class="fab fa-orcid"></i></a>
       </div>
     </div>
-  </div>
-
-  <section id="about">
-    <h2 data-fr="À propos de moi" data-en="About Me">À propos de moi</h2>
-    <p data-fr="Expert microbiologiste, mes travaux s’inscrivent dans une perspective d’adaptation au changement climatique, en mobilisant les sciences du vivant pour anticiper, comprendre et répondre aux bouleversements écologiques et sanitaires à venir."
-       data-en="As a microbiologist, my work contributes to climate change adaptation by using life sciences to anticipate, understand, and respond to ecological and health disruptions.">
-      Expert microbiologiste, mes travaux s’inscrivent dans une perspective d’adaptation au changement climatique, en mobilisant les sciences du vivant pour anticiper, comprendre et répondre aux bouleversements écologiques et sanitaires à venir.
-    </p>
-    <ul>
-      <li>🔬 Comprendre – J’étudie les interactions entre micro-organismes, ravageurs, hôtes et environnement pour mieux prévenir les risques émergents.</li>
-      <li>📣 Sensibiliser – Je conçois des projets de médiation scientifique pour rapprocher la recherche du grand public et des entreprises.</li>
-      <li>🤝 Accompagner – J’aide les structures à concevoir, analyser et valoriser leurs projets R&D.</li>
-    </ul>
-    <p>🎯 Mon objectif : faire le lien entre science, société et innovation.</p>
-  </section>
-
-  <section id="projects">
-    <h2 data-fr="Projets" data-en="Projects">Projets</h2>
-
-
-    <h3>Project Bed Bugs</h3>
-    <p>My PhD, completed in collaboration with the company IZInovation, the CNRS, and the INRAE, was dedicated to disrupting the interaction between the bedbug and its symbiont to fight the bedbug. My work resulted in the writing of a scientific article.</p>
-    <ul>
-      <li><a href="#support-wolbachia">Scientific publication on Wolbachia symbiont</a></li>
-      <li><a href="https://www.youtube.com/watch?v=iIJzlenWTeY">Talks at international contest MT180</a></li>
-      <li><a href="#support-outreach">Scientific outreach article on bed bugs and diseases</a></li>
-    </ul>
-
-    <h3>Project Locust</h3>
-    <p>Design of a research project on locust-microbiota interactions, Grant writing and proposal preparation, International collaboration setup</p>
-    <ul>
-      <li><a href="#support-locust">What is the locust about?</a></li>
-      <li><a href="#support-grant">Grant proposal documentation</a></li>
-    </ul>
-
-    <h3>Project Enter Sci</h3>
-    <p>Development of science outreach materials, Public talks and teaching experiences, Multilingual content creation for broad audiences</p>
-    <ul>
-      <li>Events at "La cité des Sciences", Paris</li>
-      <li>We teach school how to be scientific </li>
-    </ul>
-  </section>
-
-  <section id="support">
-    <h2>Support</h2>
-    <ul>
-      <li id="support-wolbachia">Scientific publication on Wolbachia symbiont – [To be added]</li>
-      <li id="support-talks">Talks at international microbiology congresses – [To be added]</li>
-      <li id="support-outreach">Scientific outreach article on bed bugs and diseases – [To be added]</li>
-      <li id="support-locust">What is the locust about? – [To be added]</li>
-      <li id="support-grant">Grant proposal documentation – [To be added]</li>
-    </ul>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email : <a href="mailto:marius.poulain@sfr.fr">marius.poulain@sfr.fr</a></p>
-  </section>
-
+    <section>
+      <h2>À propos de moi</h2>
+      <p>Expert microbiologiste, mes travaux s’inscrivent dans une perspective d’adaptation au changement climatique.</p>
+      <ul>
+        <li>🔬 Comprendre – J’étudie les interactions entre micro-organismes et environnement.</li>
+        <li>📣 Sensibiliser – Projets de médiation scientifique.</li>
+        <li>🤝 Accompagner – Conseil en R&D.</li>
+      </ul>
+    </section>
+        
+  </main>
   <script>
     function switchLanguage() {
       const lang = document.documentElement.lang === 'fr' ? 'en' : 'fr';

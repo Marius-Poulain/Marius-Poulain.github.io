@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marius Poulain</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-projects">
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="support.html">Support</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="lang-switch" onclick="switchLanguage()">EN</button>
+  </header>
+  <main>
+
+    <section>
+      <h2>Projects</h2>
+      <ul>
+        <li>🧬 Projet 1 – Description brève.</li>
+        <li>🌱 Projet 2 – Description brève.</li>
+        <li>🛰️ Projet 3 – Description brève.</li>
+      </ul>
+    </section>
+        
+  </main>
+  <script>
+    function switchLanguage() {
+      const lang = document.documentElement.lang === 'fr' ? 'en' : 'fr';
+      document.documentElement.lang = lang;
+      document.querySelector('.lang-switch').textContent = lang === 'fr' ? 'EN' : 'FR';
+      document.querySelectorAll('[data-fr]').forEach(el => {
+        el.textContent = el.getAttribute(`data-${lang}`);
+      });
+    }
+  </script>
+</body>
+</html>
