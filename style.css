@@ -110,7 +110,7 @@ p {
 /* Images */
 img.profile-photo {
   max-width: 250px;
-  width: 100%;
+  width: 50%;
   height: auto;
   float: right;
   margin: 0 0 20px 40px;
@@ -160,16 +160,16 @@ footer {
 
 /* Background color sections */
 .bg-about {
-  background-color: #0b0b0b;
+  background: url('Fond 2.jpg') no-repeat center center fixed;
 }
 .bg-projects {
-  background-color: #001f3f;
+  background: url('Fond 1.jpg') no-repeat center center fixed;
 }
 .bg-support {
-  background-color: #0c2e1a;
+  background: url('Fond 4.jpg') no-repeat center center fixed;
 }
 .bg-contact {
-  background-color: #1c1f2b;
+  background: url('Fond 3a.jpg') no-repeat center center fixed;
 }
 
 /* Responsive adjustments */
