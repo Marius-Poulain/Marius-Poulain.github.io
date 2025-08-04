@@ -109,7 +109,7 @@ p {
 
 /* Images */
 img.profile-photo {
-  max-width: 250px;
+  max-width: 200px;
   width: 50%;
   height: auto;
   float: right;
