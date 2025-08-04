@@ -108,14 +108,31 @@ img.profile-photo {
 }
 
 /* Links */
-a {
-  color: #0066cc;
-  text-decoration: none;
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
-a:hover {
-  text-decoration: underline;
+.social-links a {
+  color: #f0f0f0;
+  font-size: 1.5rem;
 }
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li::before {
+  content: "• ";
+  color: #00ffe1;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
 
 /* Footer */
 footer {
