@@ -59,12 +59,12 @@ nav a::after {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #00ffe1;
+  background-color: #65003d;
   transition: width 0.3s ease;
 }
 
 nav a:hover {
-  color: #00ffe1;
+  color: #65003d;
 }
 
 nav a:hover::after {
@@ -83,7 +83,7 @@ nav a:hover::after {
 }
 
 .lang-switch:hover {
-  color: #00ffe1;
+  color: #65003d;
 }
 
 /* Main content */
@@ -126,7 +126,7 @@ ul {
 
 ul li::before {
   content: "• ";
-  color: #00ffe1;
+  color: #65003d;
   display: inline-block;
   width: 1em;
   margin-left: -1em;
@@ -147,7 +147,7 @@ ul li::before {
 }
 
 .social-links a:hover {
-  color: #00ffe1;
+  color: #65003d;
 }
 
 /* Footer */
