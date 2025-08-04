@@ -160,7 +160,7 @@ footer {
 
 /* Background color sections */
 .bg-about {
-  background: url('Fond 2.jpg') no-repeat center center fixed;
+  background: rgba(0, 0, 0, 0.5) url('Fond 2.jpg') no-repeat center center fixed;
 }
 .bg-projects {
   background: url('Fond 1.jpg') no-repeat center center fixed;
