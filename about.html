@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Marius Poulain's Projects</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="bg-about">
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html" data-fr="Accueil" data-en="Home">Accueil</a></li>
+        <li><a href="about.html" data-fr="Marius Poulain" data-en="About Me">Marius Poulain</a></li>
+        <li><a href="projects.html" data-fr="Projets" data-en="Projects">Projets</a></li>
+        <li><a href="gallery.html" data-fr="Galerie" data-en="Gallery">Galerie</a></li>
+        <li><a href="contact.html" data-fr="Contacts" data-en="Contacts">Contacts</a></li>
+      </ul>
+    </nav>
+    <button class="lang-switch" onclick="switchLanguage()">EN</button>
+  </header>
+
+  <main>
+    <div class="profile">
+      <img src="profil.jpg" alt="Marius Poulain" />
+      <h1>Marius Poulain</h1>
+      <p data-fr="Docteur en biologie des interactions" data-en="PhD in biology on interactions">
+        Docteur en biologie des interactions
+      </p></div>
+
+    <section>
+      <h2 data-fr="À propos de moi" data-en="About me">À propos de moi</h2>
+      <p data-fr="Expert microbiologiste, mes travaux s’inscrivent dans une perspective d’adaptation au changement climatique." data-en="Microbiologist expert, my work focuses on climate change adaptation.">
+        Expert microbiologiste, mes travaux s’inscrivent dans une perspective d’adaptation au changement climatique.
+      </p>
+      <ul>
+        <li data-fr="🔬 Comprendre – J’étudie les interactions entre micro-organismes et environnement." data-en="🔬 Understand – I study interactions between microorganisms and the environment.">
+          🔬 Comprendre – J’étudie les interactions entre micro-organismes et environnement.
+        </li>
+        <li data-fr="📣 Sensibiliser – Projets de médiation scientifique." data-en="📣 Raise awareness – Science communication projects.">
+          📣 Sensibiliser – Projets de médiation scientifique.
+        </li>
+        <li data-fr="🤝 Accompagner – Conseil en R&D." data-en="🤝 Support – R&D consulting.">
+          🤝 Accompagner – Conseil en R&D.
+        </li>
+      </ul>
+      <p data-fr="🎯 Mon objectif : faire le lien entre science, société et innovation." data-en="🎯 My goal: bridging science, society and innovation.">
+        🎯 Mon objectif : faire le lien entre science, société et innovation.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/marius-poulain-360b86131/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/marius.poulain" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://github.com/Marius-Poulain" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.researchgate.net/profile/Marius-Poulain" target="_blank"><i class="fab fa-researchgate"></i></a>
+      <a href="https://scholar.google.com/citations?user=xxxxxxxx" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+      <a href="https://orcid.org/0009-0006-2037-700X" target="_blank"><i class="fab fa-orcid"></i></a>
+    </div>
+  </footer>
+
+  <script>
+    function switchLanguage() {
+      const lang = document.documentElement.lang === 'fr' ? 'en' : 'fr';
+      document.documentElement.lang = lang;
+      document.querySelector('.lang-switch').textContent = lang === 'fr' ? 'EN' : 'FR';
+
+      document.querySelectorAll('[data-fr]').forEach(el => {
+        el.textContent = el.getAttribute(`data-${lang}`);
+      });
+    }
+  </script>
+</body>
+</html>
