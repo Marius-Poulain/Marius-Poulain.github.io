@@ -106,6 +106,37 @@ h2 {
 p {
   margin-bottom: 1.5rem;
 }
+ /* Projects */
+.project {
+  display: flex;
+  align-items: flex-start; /* aligne en haut */
+  gap: 20px; /* espace entre l'image et le texte */
+  margin-bottom: 40px;
+}
+
+.project img {
+  width: 120px;       /* taille réduite */
+  height: auto;
+  border-radius: 4px;
+  flex-shrink: 0;     /* empêche l'image de se réduire encore */
+}
+
+.project-text {
+  flex: 1;            /* texte prend tout l'espace restant */
+}
+
+/* Responsive : image au-dessus du texte sur mobile */
+@media (max-width: 768px) {
+  .project {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .project img {
+    margin-bottom: 15px;
+  }
+}
 
 /* Contacts */
 .contact-form .form-group {
