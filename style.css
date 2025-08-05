@@ -143,14 +143,17 @@ p {
 }
 
 /* Images */
+
 img.profile-photo {
-  max-width: 200px;
-  width: 50%;
-  height: auto;
-  float: right;
-  margin: 0 0 20px 40px;
-  border-radius: 4px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  display: block;              /* Permet de centrer avec margin auto */
+  margin: 0 auto;               /* Centre horizontalement */
+  width: 50%;                   /* 2x plus petite que la taille originale */
+  height: auto;                 /* Conserve les proportions */
+  filter: grayscale(100%);      /* Noir et blanc */
+}
+img.profile-photo:hover {
+  filter: grayscale(0%);
+  transition: filter 0.5s ease;
 }
 
 /* Lists */
