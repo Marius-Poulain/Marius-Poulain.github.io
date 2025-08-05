@@ -186,7 +186,7 @@ p {
   filter: grayscale(0%);
   transition: filter 0.5s ease;
 }
-.profile-form button {
+.profile button {
   background-color: #65003d;
   color: #fff;
   padding: .8rem 1.6rem;
@@ -197,7 +197,7 @@ p {
   transition: background-color 0.3s ease;
 }
 
-.profile-form button:hover {
+.profile button:hover {
   background-color: #843364;
 }
 
