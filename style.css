@@ -175,14 +175,14 @@ p {
 
 /* Images */
 
-profile {
+.profile {
   display: block;              /* Permet de centrer avec margin auto */
   margin: 0 auto;               /* Centre horizontalement */
   width: 50%;                   /* 2x plus petite que la taille originale */
   height: auto;                 /* Conserve les proportions */
   filter: grayscale(100%);      /* Noir et blanc */
 }
-profile:hover {
+.profile:hover {
   filter: grayscale(0%);
   transition: filter 0.5s ease;
 }
