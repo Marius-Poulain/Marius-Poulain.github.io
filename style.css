@@ -228,20 +228,24 @@ footer {
 }
 
 /* Background color sections */
+.bg-index {
+  background: url('Fond 1.jpg') no-repeat center center fixed;
+  background-size: cover;
+  background-color:rgba(0, 0, 0, 0.9);}
 .bg-about {
   background: url('Fond 2.jpg') no-repeat center center fixed;
   background-size: cover;
   background-color:rgba(0, 0, 0, 0.9);}
 .bg-projects {
-  background: url('Fond 1.jpg') no-repeat center center fixed;
+  background: url('Fond 3a.jpg') no-repeat center center fixed;
   background-size: cover;
   background-color:rgba(0, 0, 0, 0.5);}
 .bg-support {
-  background: url('Fond 4.jpg') no-repeat center center fixed;
+  background: url('Fond 3b.jpg') no-repeat center center fixed;
   background-size: cover;
   background-color:rgba(0, 0, 0, 0.5);}
 .bg-contact {
-  background: url('Fond 3a.jpg') no-repeat center center fixed;
+  background: url('Fond 4.jpg') no-repeat center center fixed;
   background-size: cover;
   background-color: rgba(0, 0, 0, 0.5);}
 
