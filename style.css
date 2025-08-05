@@ -186,18 +186,19 @@ p {
   filter: grayscale(0%);
   transition: filter 1s ease;
 }
-.profile button {
+.profile a {
   background-color: #65003d;
   color: #fff;
   padding: .8rem 1.6rem;
-  border: none;
   border-radius: 4px;
   cursor: pointer;
   font-size: 1rem;
+  text-decoration: none;
+  display: inline-block;
   transition: background-color 0.3s ease;
 }
 
-.profile button:hover {
+.profile a:hover {
   background-color: #843364;
 }
 
