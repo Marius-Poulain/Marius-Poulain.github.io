@@ -25,9 +25,26 @@
   <main>
 
     <section>
-      <p data-fr="Je serais heureux de répondre à routes vos interrogations et demandes." data-en="I would be happy to answer all your questions".>
-          Je serais heureux de répondre à routes vos interrogations et demandes.
-      </p>
+        <form class="contact-form">
+    <div class="form-group">
+      <label>Name *</label>
+      <input type="text" name="first_name" placeholder="First Name" required>
+      <input type="text" name="last_name" placeholder="Last Name" required>
+    </div>
+    <div class="form-group">
+      <label>Email Address *</label>
+      <input type="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label>Subject *</label>
+      <input type="text" name="subject" required>
+    </div>
+    <div class="form-group">
+      <label>Message *</label>
+      <textarea name="message" rows="5" required></textarea>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
     </section>
     
     <section>
