@@ -173,7 +173,7 @@ p {
   background-color: #843364;
 }
 
-/* Images */
+/* Profile */
 
 .profile {
   display: block;              /* Permet de centrer avec margin auto */
@@ -185,6 +185,20 @@ p {
 .profile:hover {
   filter: grayscale(0%);
   transition: filter 0.5s ease;
+}
+.profile-form button {
+  background-color: #65003d;
+  color: #fff;
+  padding: .8rem 1.6rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.profile-form button:hover {
+  background-color: #843364;
 }
 
 /* Lists */
@@ -229,24 +243,20 @@ footer {
 
 /* Background color sections */
 .bg-index {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Fond 1.jpg') no-repeat center center fixed;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('Fond 1.jpg') no-repeat center center fixed;
   background-size: cover;}
 .bg-about {
-  background: url('Fond 2.jpg') no-repeat center center fixed;
-  background-size: cover;
-  background-color:rgba(0, 0, 0, 0.9);}
+background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('Fond 2.jpg') no-repeat center center fixed;
+  background-size: cover;}
 .bg-projects {
-  background: url('Fond 3a.jpg') no-repeat center center fixed;
-  background-size: cover;
-  background-color:rgba(0, 0, 0, 0.5);}
+background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('Fond 3a.jpg') no-repeat center center fixed;
+  background-size: cover;}
 .bg-support {
-  background: url('Fond 3b.jpg') no-repeat center center fixed;
-  background-size: cover;
-  background-color:rgba(0, 0, 0, 0.5);}
+background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('Fond 3b.jpg') no-repeat center center fixed;
+  background-size: cover;}
 .bg-contact {
-  background: url('Fond 4.jpg') no-repeat center center fixed;
-  background-size: cover;
-  background-color: rgba(0, 0, 0, 0.5);}
+background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('Fond 4.jpg') no-repeat center center fixed;
+  background-size: cover;}
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
