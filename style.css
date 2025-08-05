@@ -175,14 +175,14 @@ p {
 
 /* Images */
 
-img.profile-photo {
+profile {
   display: block;              /* Permet de centrer avec margin auto */
   margin: 0 auto;               /* Centre horizontalement */
   width: 50%;                   /* 2x plus petite que la taille originale */
   height: auto;                 /* Conserve les proportions */
   filter: grayscale(100%);      /* Noir et blanc */
 }
-img.profile-photo:hover {
+profile:hover {
   filter: grayscale(0%);
   transition: filter 0.5s ease;
 }
@@ -247,7 +247,7 @@ footer {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  img.profile-photo {
+  profile {
     float: none;
     display: block;
     margin: 20px auto;
