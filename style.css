@@ -173,7 +173,75 @@ p {
   background-color: #843364;
 }
 
-/* Profile */
+/* Profile about */
+.about-layout {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Colonne gauche : image + nom */
+.about-left {
+  flex: 0 0 220px; /* largeur fixe pour la colonne image */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+/* Photo ronde, plus petite, bords estompés (ombre + léger bord) */
+.about-left .profile {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  filter: grayscale(100%);
+  border: 6px solid rgba(39,34,45,0.6); /* bord discret pour fond sombre */
+  box-shadow: 0 12px 30px rgba(0,0,0,0.6), 0 2px 6px rgba(101,0,61,0.08); /* ombre pour l'intégration */
+  transition: transform .35s ease, filter .6s ease, box-shadow .35s ease;
+  /* soften edges davantage pour navigateurs modernes (optionnel) */
+  -webkit-mask-image: radial-gradient(circle at center, black 72%, transparent 100%);
+  mask-image: radial-gradient(circle at center, black 72%, transparent 100%);
+}
+
+/* Hover : retour de la couleur et léger lift */
+.about-left .profile:hover {
+  filter: grayscale(0%);
+  transform: translateY(-6px);
+  box-shadow: 0 18px 44px rgba(0,0,0,0.65), 0 4px 10px rgba(101,0,61,0.12);
+}
+
+/* Nom affiché sous la photo */
+.about-left .name {
+  margin-top: 0.7rem;
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #ffffff;
+  line-height: 1.1;
+}
+
+/* Colonne droite : le texte principal */
+.about-right {
+  flex: 1 1 auto;
+  color: #eaeaea;
+  font-size: 1rem;
+  min-width: 0; /* évite overflow des paragraphes flexibles */
+}
+
+/* Harmonisation titres/paragraphes à droite si besoin */
+.about-right h1,
+.about-right h2 {
+  color: #fff;
+}
+
+.about-right p {
+  margin-bottom: 1rem;
+  color: #ddd;
+}
 
 .profile {
   width: 150px;         /* taille plus petite */
