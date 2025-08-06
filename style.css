@@ -176,10 +176,11 @@ p {
 /* Profile */
 
 .profile {
-  display: block;              /* Permet de centrer avec margin auto */
+  width: 150px;         /* taille plus petite */
+  height: 150px;        /* hauteur identique pour un cercle parfait */
+  object-fit: cover;    /* recadre bien l'image */
+  border-radius: 50%;   /* rend l'image ronde */
   margin: 0 auto;               /* Centre horizontalement */
-  width: 25%;                   /* 4x plus petite que la taille originale */
-  height: auto;                 /* Conserve les proportions */
   filter: grayscale(100%);      /* Noir et blanc */
 }
 .profile:hover {
