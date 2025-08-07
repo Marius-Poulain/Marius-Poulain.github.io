@@ -16,7 +16,7 @@ html, body {
 
 /* Layout container */
 .container {
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
 }
@@ -89,7 +89,7 @@ nav a:hover::after {
 /* Main content */
 main {
   padding: 8rem 2rem 2rem;
-  max-width: 900px;
+  max-width: 1200px;
   margin: auto;
 }
 
