@@ -185,16 +185,16 @@ p {
 
 /* Colonne gauche : image + nom */
 .about-left {
-  flex: 0 0 220px; /* largeur fixe pour la colonne image */
+  flex: 0 0 220px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   padding-top: 1rem;
   position: sticky;
-  top: 1.5rem;         /* espace entre le bord haut et la colonne */
-  align-self: flex-start; /* essentiel pour le sticky à l’intérieur d’un flex container */
-}
+  top: 1.5rem;
+  align-self: flex-start;
+  height: fit-content;
 }
 
 /* Photo ronde, plus petite, bords estompés (ombre + léger bord) */
