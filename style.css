@@ -260,7 +260,7 @@ p {
   transition: filter 1s ease;
 }
 .profile a {
-  background-color: #65003d;
+  background-color: #65003d !important;
   color: #fff;
   padding: .8rem 1.6rem;
   border-radius: 4px;
