@@ -191,6 +191,10 @@ p {
   align-items: center;
   text-align: center;
   padding-top: 1rem;
+  position: sticky;
+  top: 1.5rem;         /* espace entre le bord haut et la colonne */
+  align-self: flex-start; /* essentiel pour le sticky à l’intérieur d’un flex container */
+}
 }
 
 /* Photo ronde, plus petite, bords estompés (ombre + léger bord) */
