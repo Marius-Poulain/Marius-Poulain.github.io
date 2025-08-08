@@ -149,8 +149,8 @@ p {
   margin-bottom: .4rem;
 }
 
-.contact-form inputname,
-.contact-form textarea {
+.contact-form-name input,
+.contact-form-name textarea {
   width: 10%;
   padding: .6rem;
   border: 1px solid #ccc;
@@ -158,8 +158,8 @@ p {
   font-size: 1rem;
 }
 
-.contact-form inputsubject,
-.contact-form textarea {
+.contact-form-subject input,
+.contact-form-subject textarea {
   width: 50%;
   padding: .6rem;
   border: 1px solid #ccc;
@@ -167,8 +167,8 @@ p {
   font-size: 1rem;
 }
 
-.contact-form inputmail,
-.contact-form textarea {
+.contact-form-mail input,
+.contact-form-mail textarea {
   width: 100%;
   padding: .6rem;
   border: 1px solid #ccc;
