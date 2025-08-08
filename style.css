@@ -149,7 +149,25 @@ p {
   margin-bottom: .4rem;
 }
 
-.contact-form input,
+.contact-form inputname,
+.contact-form textarea {
+  width: 10%;
+  padding: .6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.contact-form inputsubject,
+.contact-form textarea {
+  width: 50%;
+  padding: .6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.contact-form inputmail,
 .contact-form textarea {
   width: 100%;
   padding: .6rem;
